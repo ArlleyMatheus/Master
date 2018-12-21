@@ -484,7 +484,10 @@ tabela, isto é, tabelas envolvidas em restrições de integridade;
 # 10. duas operações de modificação, sendo que pelo menos uma deverá envolver mais de uma tabela, isto é, tabelas envolvidas em restrições de integridade;
 
 # 11. criação de duas visões;
-
+--Visao que assimila codigo do contador com  id do condominio
+CREATE VIEW CONTGERAL as 
+select contador  ,codigo 
+from condominios as cond inner join contadores as cont on cond.contador = cont.id
 
 
 
